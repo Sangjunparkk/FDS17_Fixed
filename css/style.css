@@ -9,12 +9,17 @@ html {
   font-size: 10px;
 }
 body {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #181818; 
   background-color: #fff;
   font-family: 'Spoqa Han Sans';
   font-weight: 400;
 }
+/* 링크 스타일 */
+a {
+  text-decoration: none;
+  color: inherit;
+}/* 부모에게 상속받은 속성을 우선시하는 값 inherit; */
 /* 레이아웃 */
 .container{
   background-color: #ccc;
@@ -22,12 +27,50 @@ body {
   flex-flow: column nowrap;
   align-items: center;
 }
-.header, .visual, .main, .slogan, .footer{
+.header, 
+.visual, 
+.main, 
+.slogan, 
+.footer{
   width: 940px;
 }
+/* 헤더 */
 .header{
-  background-color: yellow;
+  background-color: #fff;
+  border-radius: 0 0 15px 15px;
+  padding: 0 30px 0 30px;
+  position: relative;
 }
+/* 로고 */
+.logo{
+  position: absolute;
+  top: 45px;
+  left: 65px;
+}
+/* 멤버링크 */
+.member {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: -8px;
+  font-size: 0;
+  text-align: right;
+}
+.member li,
+.member a {
+  display: inline-block; /* 블록형식인 요소를 인라인형식으로 바꿔서 수평으로 정렬 이후 부모요소에 text-align: right;로 우측 정렬*/
+}
+.member li {
+  font-size: 1.4rem;
+}
+.member a { 
+  text-transform: uppercase; /* 대문자로 표기 uppercase; */
+  padding: 2px 8px 2px 3px;
+}
+.member [aria-hidden] {
+  /* margin: 0 5px; */ 
+}/* 속성선택자  .요소 [ 속성] {}*/
 .visual{
   background-color: lime;
   height: 120px
