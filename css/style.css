@@ -265,6 +265,7 @@ a {
   border-radius: 5px;
   box-shadow:5px 5px 0 0 #ccc;
   padding: 10px;
+  width: calc(100% - 5px); /* calc속성 */
 }
 .login-heading {
   margin-top: 0;
@@ -331,7 +332,6 @@ a {
   float: right;
 }
 .member-only a {
-  background-color: yellow;
   padding-top: 5px;
   padding-bottom: 5px;  
 }
@@ -341,6 +341,30 @@ a {
   display: inline-block;
   margin-right: .2em;
   color: #db5629;
+}
+/* 유효성 검사 배너 링크 */
+.validation-list {
+  background-color: yellow;
+  padding: 0;
+  margin-top: 25px;
+  margin-bottom: 0;
+  list-style: none;
+}
+.validation-list a {
+  display: block;
+  padding: 8px 10px 8px 45px;
+  /* line-height: 30px; */
+  margin-top: 10px;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  background-color: #ccc;
+  background-image: url(./images/validation_icon.png),
+    linear-gradient(180deg, #ccc, #eee);
+  background-repeat: no-repeat; repeat;
+  background-position: 15px 50%, 0 0;
+}
+.validation-list a:hover {
+  color: #f00; /* a:hover의 경우 띄어쓰기를 하면 안되는 부분을 기억해야 한다. 띄어쓰기를 할 경우 a요소 내부의 자식 요소 중 어떠한 것이라도 해당 속성이 작용하게 된다.*/
 }
 /* 슬로건 */
 .slogan{
@@ -357,3 +381,17 @@ a {
 .footer{
   background-color: skyblue;
 }
+
+/* .validation-list {
+  color: black;
+  list-style-image: url(./images/validation_icon.png);
+}
+.validation-list li {
+  width: 250px;
+  height: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: radial-gradient(circle at bottom, lightgray, rgb(95, 95, 95));
+} */
