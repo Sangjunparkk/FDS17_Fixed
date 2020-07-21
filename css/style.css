@@ -359,7 +359,7 @@ a {
   background-color: #ccc;
   background-image: url(./images/validation_icon.png),
     linear-gradient(180deg, #ccc, #eee);
-  background-repeat: no-repeat; repeat;
+  background-repeat: no-repeat;
   background-position: 15px 50%, 0 0;
 }
 .validation-list a:hover {
