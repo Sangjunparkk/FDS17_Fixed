@@ -33,9 +33,9 @@ a {
 }/* 부모에게 상속받은 속성을 우선시하는 값 inherit; */
 /* 레이아웃 */
 .container{
-  display: flex;
+  /* display: flex;
   flex-flow: column nowrap;
-  align-items: center;
+  align-items: center; */
 }
 .header, 
 .visual, 
@@ -43,12 +43,14 @@ a {
 .slogan, 
 .footer{
   width: 940px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* 헤더 */
 .header{
   background-color: #fff;
   border-radius: 0 0 15px 15px;
-  padding: 0 30px 0 30px;
+  padding: 1px 30px;
   position: relative;
 }
 /* 로고 */
@@ -233,24 +235,22 @@ a {
 }
 /* 메인 콘텐츠 */
 .main{
-  background-color: blue;
+  background-color: #fff;
   min-height: 450px;
   padding: 30px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: flex-start;
+  border-radius: 15px 15px 0 0;
 }
 .group1{
-  background-color: pink;
   width: 250px;
 }
 .group2{
-  background-color: lightgreen;
   width: 380px;
 }
 .group3{
-  background-color: coral;
   width: 190px;
 }
 .clearfix::after{
@@ -344,7 +344,6 @@ a {
 }
 /* 유효성 검사 배너 링크 */
 .validation-list {
-  background-color: yellow;
   padding: 0;
   margin-top: 25px;
   margin-bottom: 0;
@@ -365,6 +364,73 @@ a {
 }
 .validation-list a:hover {
   color: #f00; /* a:hover의 경우 띄어쓰기를 하면 안되는 부분을 기억해야 한다. 띄어쓰기를 할 경우 a요소 내부의 자식 요소 중 어떠한 것이라도 해당 속성이 작용하게 된다.*/
+}
+/* 웹 관련 용어 */
+.term {
+  background: #ccc linear-gradient(180deg, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 20px;
+  /* background-color: yellow;
+  background: linear-gradient(180deg, #ccc, #eee);
+  padding-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  border: 1px solid #aaa;
+  border-radius: 10px; */
+}
+.term-heading {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  /* font-size: 1.5rem; */
+}
+.term-list {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.term-list > div {
+  margin-top: 10px;
+}
+.term-list-subject,
+.term-list-brief {
+  width: 145px;
+  /* float: right; */
+  /* display: inline;
+  color: rgb(51, 51, 255); */
+}
+.term-list-subject {
+  color: #296897;
+}
+.term-list-thumbnail {
+  margin-left: 0;
+  /* float: left; */
+  /* padding: 0;
+  margin: 0; */
+  /* width: 60px; float을 사용하면 width는 따로 지정하지 않아도 subject와 brief의 레이어에 영향을 주지 않게됨 */
+  /* float: left;
+  margin-right: 20px; */
+}
+.term-list-brief {
+  margin-left: 0;
+  margin-top: 5px;
+  /* margin-top: 10px; */
+}
+.term-list > div::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.odd > .term-list-subject,
+.odd > .term-list-brief,
+.even > .term-list-thumbnail {
+  float: right;
+}
+.odd > .term-list-thumbnail,
+.even > .term-list-subject,
+.even > .term-list-brief {
+  float: left;
 }
 /* 슬로건 */
 .slogan{
