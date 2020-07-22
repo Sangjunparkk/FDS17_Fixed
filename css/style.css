@@ -481,7 +481,44 @@ a {
   height: 24px;
   padding: 0 10px;
 }
+/* 공 및 자 */
+.board {
 
+}
+.notice-heading,
+.pds-heading {
+  background-color: yellow;
+  font-size: 1.6rem;
+}
+.tab { 
+  float: left;
+  position: relative;
+}
+.notice-list,
+.pds-list {
+  background-color: pink;
+  padding: 0;
+}
+.notice-list > li,
+.pds-list > li {
+  list-style: none;
+  display: block;
+  clear: both;
+}
+.notice-list a::before,
+.pds-list a::before {
+  content: '\f192';
+  font-family: 'fontello';
+  display: inline-block;
+  width: 1em;
+  margin-right: .2em;
+  margin-left: .2em;
+}
+.icon-plus {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 /* 슬로건 */
 .slogan{
   background-color: orange;
