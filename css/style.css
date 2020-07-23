@@ -287,7 +287,7 @@ a {
 .login-form input {
   width: 90px;
   height: 24px;
-  border: solid 1 #aaa;
+  border: solid 1px #aaa;
   padding: 1px 1px 1px 0.5em; /*UX를 바탕으로 입력란에 클릭 시 알 수 있는 여백 제공*/
 }
 .btn-login {
@@ -565,6 +565,56 @@ a {
 .icon-plus::before {
   color: hsla(110, 70%, 50%, 1);
 }
+/* 새소식 */
+.news {
+  margin-top: 20px;
+  position: relative;
+}
+.news::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  height: 1px;
+  width: 80%;
+  background: #ccc linear-gradient(to right, #aaa, #fff);
+}
+.news-heading {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #db5629;
+}
+.news-item {
+  margin-top: 30px;
+  padding-left: 130px;
+  position: relative;
+}
+.news-item-subject {
+  margin: 0;
+  font-size: 1.4rem;
+}
+.news-item-brief {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+.news-item-thumbnail {
+  margin: 0;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  text-align: center;
+}
+.news-item-thumbnail img {
+  margin-bottom: 15px;
+  box-shadow: 0 15px 15px 5px #ccc;
+}
+.news-more {
+  position: absolute;
+  padding: 8px;
+  top: -8px;
+  right: -8px;
+}
 /* 슬로건 */
 .slogan{
   background-color: orange;
@@ -697,4 +747,42 @@ a {
 }
 .icon-plus::before {
   color: darkgreen;
+} */
+
+/* 뉴스 */
+/* .news {
+  background-color: silver;
+  margin-top: 20px ;
+  padding-top: 0;
+  position: relative;
+}
+.news-heading {
+  background-color: yellow;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid;
+  border-color: linear-gradient(270deg, #000, #fff);
+}
+.news-item {
+  background-color: green;
+}
+.news-item-subject {
+  margin: 0;
+}
+.news-item-thumbnail {
+  background-color: orange;
+}
+.news-item-thumbnail img {
+
+}
+.news-item-thumbnail figcaption {
+}
+.news-more {
+  background-color: lime;
+  padding: 8px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
 } */
