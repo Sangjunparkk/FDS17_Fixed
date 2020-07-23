@@ -132,7 +132,11 @@ a {
   padding-left: 0;
   list-style: none;
   white-space: nowrap;
+  display: none;
   /* width: 300px; */
+}
+.menu-act .sub-menu {
+  display: block;
 }
 .sub-menu li,
 .sub-menu a {
@@ -164,24 +168,7 @@ a {
 .sub-menu6 {
   right: 0;
 }
-.sub-menu1 {
-  display: block;
-}
-.sub-menu2 {
-  display: none;
-}
-.sub-menu3 {
-  display: none;
-}
-.sub-menu4 {
-  display: none;
-}
-.sub-menu5 {
-  display: none;
-}
-.sub-menu6 {
-  display: none;
-}
+
 /* 비주얼 */
 @keyframes textAni {
   0%/*from*/{
@@ -483,18 +470,25 @@ a {
 }
 /* 공지사항 및 자료실 */
 .board {
-  background-color: yellow;
   margin-top: 20px;
   position: relative;
   min-height: 180px;
+  padding-top: 45px;
 }
 .notice-heading,
 .pds-heading {
-  background-color: pink;
-  float: left;
+  /* float: left; */
   margin: 0;
   font-size: 1.4rem;
   font-weight: 400;
+  position: absolute;
+  top: 0;
+}
+.notice-heading {
+  left: 0;
+}
+.pds-heading {
+  left: 73px;
 }
 .tab {
   display: block;
@@ -523,18 +517,17 @@ a {
 }
 .notice-list,
 .pds-list {
-  background-color: silver;
   list-style: none;
   margin: 0;
   padding-left: 0;
-  position: absolute;
-  top: 45px;
-  left: 0;
-  width: 100%;
+  /* position: absolute; */
+  /* top: 45px; */
+  /* left: 0; */
+  min-height: 130px;
+  /* width: 100%; */
 }
 .notice-list li,
 .pds-list li {
-  background-color: orange;
   margin-bottom: 10px;
 }
 .notice-list li::after,
@@ -545,7 +538,6 @@ a {
 }
 .notice-list a,
 .pds-list a {
-  background-color: skyblue;
   float: left;
   width: 300px;
   text-overflow: ellipsis;
@@ -561,7 +553,6 @@ a {
 }
 .notice-list time,
 .pds-list time {
-  background-color: violet;
   float: right;
 }
 .notice-more,
