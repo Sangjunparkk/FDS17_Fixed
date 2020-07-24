@@ -615,6 +615,73 @@ a {
   top: -8px;
   right: -8px;
 }
+/* 신규 이벤트 및 관련 사이트 */
+.gradient-box {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+  background: #ccc linear-gradient(180deg, #ccc, #eee);
+}
+/* .btn-wrap {
+  background-color: yellow;
+  height: 18px;
+}
+.btn-prev,
+.btn-next {
+  background: #ccc url(./images/back_forward.png) no-repeat;
+  width: 19px; 
+  height: 100%;
+  border: 0;
+  overflow: hidden;
+  padding: 18px 0 0 0;
+  cursor: pointer;
+}
+.btn-next {
+  background-position: -36px 0;
+} */
+.event {
+  background-color: yellow;
+  border-bottom: 1px solid #aaa;
+  position: relative;
+}
+.event-heading {
+  font-size: 1.6rem;
+  margin: 0;
+}
+.event-heading span {
+  color: #db5629;
+}
+.event-thumbnail,
+.event-brief {
+  margin: 10px 0;
+}
+.event-thumbnail img {
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #999;
+}
+.event-brief em {
+  font-style: normal;
+}
+.btn-wrap {
+  background-color: pink;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.btn-prev,
+.btn-next {
+  background-color: #ccc;
+  background-image: url(./images/back_forward.png);
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 18px;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.btn-next {
+  background-position: -36px 0;
+}
 /* 슬로건 */
 .slogan{
   background-color: orange;
@@ -785,4 +852,64 @@ a {
   position: absolute;
   top: -8px;
   right: -8px;
+} */
+
+/* 이벤트 내가 연습 */
+/* .gradient-box {
+  background-color: #aaa;s
+  padding: 10px;
+}
+.event {
+  background-color: blanchedalmond;
+  position: relative;
+}
+.event-heading {
+  background-color: yellow;
+  display: block;
+  width: 120px;
+  font-size: 1.4em;
+  margin: 0;
+}
+.event-heading > span {
+  color: #db5629;
+}
+.event-detail {
+  background-color: skyblue;
+  margin: 0;
+  padding: 0;
+}
+.event-thumbnail {
+  box-shadow: ;
+  
+}
+.btn-wrap {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.btn-prev {
+  width: 19px;
+  height: 18px;
+  text-indent: -10000px;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(./images/back_forward.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  border: 0;
+  padding: 0;
+}
+.btn-next {
+  width: 19px;
+  height: 18px;
+  text-indent: -10000px;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(./images/back_forward.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  border: 0;
+  padding: 0;
 } */
