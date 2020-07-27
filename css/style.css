@@ -922,16 +922,63 @@ a {
   left: 160px;
 } */
 .footer-bg{
-  background-color: purple;
+  background: #ccc linear-gradient(180deg, #ccc, #eee);
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
-.footer{
-  background-color: skyblue;
+.footer {
+  padding-right: 100px;
+  padding-left : 170px;
+  position: relative;
+}
+/* 푸터 로고 */
+.footer-logo {
+  position: absolute;
+  top: 35px;
+  left: 35px;
 }
 
+/* 가이드 링크 */
+.guide-list {
+  margin: 0;
+  padding: 4px 20px;
+  list-style: none;
+  background-color: #7b8385;
+  color: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+.guide-list a {
+  display: block;
+  padding: 6px 15px;
+  text-transform: uppercase;
+}
+/* 주소 및 연락처 */
+.address {
+  font-style: normal;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.address span {
+  margin-right: 10px;
+}
+/* 저작권 */
+.copyright {
+  font-size: 1.4rem;
+  display: block;
+}
+/* 적용 기술 배지 */
+.badge {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 /* 연습들 */
 
 /* .validation-list {
