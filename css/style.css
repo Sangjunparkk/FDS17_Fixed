@@ -899,9 +899,7 @@ a {
 }
 .slogan-brief q::before {
   font-size: 3rem;
-  /* vertical-align: bottom; */
-  position: relative;
-  top: 10px;
+  vertical-align: middle;
   margin-right: 5px;
 }
 .slogan-brief q::after {
@@ -933,7 +931,7 @@ a {
 .footer{
   background-color: skyblue;
 }
-색상-#a09784
+
 /* 연습들 */
 
 /* .validation-list {
