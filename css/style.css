@@ -861,11 +861,68 @@ a {
   line-height: 25px;
   padding-left: 10px;
 } */
+
 /* 슬로건 */
 .slogan{
-  background-color: orange;
-  clear: both;
+  position: relative;
+  padding: 15px 80px 15px 170px;
 }
+.slogan-heading {
+  margin: 0;
+  width: 110px;
+  height: 83px;
+  position: absolute;
+  left: 35px;
+  bottom: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.slogan-heading::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(./images/coffee.png) no-repeat 0 0 scroll;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slogan-brief {
+  color: #a09784;
+  font-size: 1.3rem;
+}
+.slogan-brief q {
+  font-weight: 700;
+  
+}
+.slogan-brief q::before {
+  font-size: 3rem;
+  /* vertical-align: bottom; */
+  position: relative;
+  top: 10px;
+  margin-right: 5px;
+}
+.slogan-brief q::after {
+  content: "";
+}
+/* .slogan-heading {
+  background-color: red;
+  background-image: url(./images/coffee.png);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  text-indent: -70px;
+  margin-left: auto;
+}
+.slogan-brief {
+  background-color: blue;
+  margin: 0;
+  color: #a09784;
+  position: absolute;
+  top: 0;
+  left: 160px;
+} */
 .footer-bg{
   background-color: purple;
   width: 100%;
@@ -876,6 +933,8 @@ a {
 .footer{
   background-color: skyblue;
 }
+색상-#a09784
+/* 연습들 */
 
 /* .validation-list {
   color: black;
